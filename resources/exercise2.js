@@ -1,0 +1,10 @@
+db.carts.find();
+db.carts.find().pretty();
+db.carts.find({"shopper": "shopper187"}, {"total": 1}).pretty();
+db.carts.find({"paymentMethod": /master/i }, {"shopper": 1, "paymentMethod":1}).pretty();
+db.carts.update({"shopper":"shopper187"}, {"$set":{"paymentMethod":"VISA"}});
+db.carts.find({"shopper": "shopper187" }, {"shopper": 1, "paymentMethod":1}).pretty();
+db.carts.update({"shopper":"shopper187"}, {"$set":{"paymentMethod":"VISA"}},{"multi":1});
+db.carts.find({"shopper": "shopper187" }, {"shopper": 1, "paymentMethod":1}).pretty();
+db.carts.remove({"shopper":"shopper187"});
+db.carts.find({"shopper": "shopper187" }, {"shopper": 1, "paymentMethod":1}).pretty();
