@@ -10,5 +10,8 @@ Presentation here: [https://docs.google.com/presentation/d/1beCq_eHu6NVP7402edxk
 
 ### Preparation for workshop:
 Install mongodb on your laptop:
-    - Brew/Binary way: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
-    - Docker: https://hub.docker.com/_/mongo/
+- Brew/Binary way: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
+- Docker: https://hub.docker.com/_/mongo/
+
+Loading the dataset:
+1. ```(cd resources && tar xvfz carts.tgz && mongorestore -h localhost -d workshop carts)```
