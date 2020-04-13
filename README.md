@@ -14,4 +14,8 @@ Install mongodb on your laptop:
 - Docker: https://hub.docker.com/_/mongo/
 
 Loading the dataset:
-1. ```(cd resources && tar xvfz carts.tgz && mongorestore -h localhost -d workshop carts)```
+1. ```$ (cd resources && tar xvfz carts.tgz && mongorestore -h localhost -d workshop carts)```
+2. ```$ mongo```
+3. ```> show dbs;```
+4. ```> use workshop```
+5. ```> show dbs;``` 
